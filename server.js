@@ -12,10 +12,9 @@ const profile = {
     linkedIn:'https://www.linkedin.com/in/laura-limones-468b37362',
 };
 
-//Servir fitxers estàtics de la carpeta public.
-app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static(__dirname));
 //express.static() => middleware que serveix fitzers estàtics des d'una carpeta. 
-//path.join() => construeix el camí absolut a la carpeta public del projecte.
 
 //API pública per obtenir el perfil.
 app.get('/api/profile', (req, res) => {

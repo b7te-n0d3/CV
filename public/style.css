@@ -2,7 +2,7 @@
   --fg: #111;
   --bg: #fff;
   --muted: #6b7280;
-  --link: #2563eb;
+  --link: #eb2525;
 }
 
 * {
@@ -58,21 +58,17 @@ p {
 /*Avatar del menú*/
 
 #avatarMenu {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;       /* rodona */
   object-fit: cover;        /* que no es deformi */
-  border: 3px solid var(--link);
-}
-
-.dark-mode #avatarMenu {
-  border-color: #90b4ff;
 }
 
 
 /* Menú */
 nav {
   display: flex;
+  flex-direction: column;
   align-items: center;   /* alineació vertical de la foto i botons */
   gap: 1rem;
   justify-content: center; /* Centrar els botons */
@@ -83,9 +79,9 @@ nav {
 .navBtn {
   padding: 10px 18px;
   border: none;
-  background-color: #e5e7eb; /* gris suau */
+  background-color: #6f84c1; /* gris suau */
   color: #111;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
 }
@@ -131,7 +127,7 @@ nav {
 /* Dark mode per a seccions */
 .dark-mode .section {
   background: #1f1f1f;
-  border-left-color: #90b4ff;
+  border-left-color: #f41313;
 }
 
 /* Enllaços */
